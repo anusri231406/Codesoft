@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Company Name - Welcome</title>
+</head>
+<style>
+    /* Reset some default styles */
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+/* Style the header and navigation */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+    color: violet;
+    font-size: 26px;
+}
+
+.firstSection{
+        
+        background-image: url('walpaper.jpg');
+        margin: 20px 0;
+        align-items: center;
+        height: 30rem;
+        width: 100%;
+        
+      }
+      
+      .first{
+        margin: 80px 0;
+        display: flex;
+      }
+
+      .left{
+        width: 45%;
+      }
+
+      
+      .right{
+        width: 70%;                        
+        margin: 10px 50px;   
+      }
+
+      .right h1{
+        font-size: 2rem;
+        color: #ccc;
+        margin-top: 150px;
+        margin-left: 10px;
+        margin-left: 10px;
+        
+        
+      }
+
+      .righttext{
+        align-items: center;
+        font-size: 1rem;
+        color: white;
+        margin: 10px 10px;
+      }
+
+      .btn {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+       
+        margin: 20px 10px;
+    }
+
+    .btn:hover {
+        background-color: #0056b3;
+    }
+
+    .secondSection{
+        
+        
+        margin-bottom: 40px;
+        align-items: center;
+        height: 35rem;
+        width: 100%;
+        
+      }
+      
+      .second{
+        margin: 80px 70px;
+        display: flex;
+      }
+
+      .head{
+        margin: 10px 20px;
+        font-size: 2rem;
+        color: white;
+      }
+
+      .leftsec{
+        width: 30%;
+        height: 30rem;
+        margin: 0 10px;
+        
+      }
+
+      .leftsec h2{
+        font-size: 2rem;
+        color: blue;
+        margin: 40px 10px;
+      } 
+
+      .lefttext{
+        align-items: center;
+        font-size: 1.3rem;
+        margin: 40px 10px;
+        color: white;
+      }
+
+
+      .rightsec{
+        width: 70%;                        
+        margin: 10px 50px; 
+        
+      }
+
+      .rightsec img
+      {
+        width: 100%;
+        height: 25rem;
+        margin: 50px 40px;
+        margin-top: 60px;
+        
+        border-radius: 1rem;  
+      }
+
+      .service{
+        margin: 10px 0;
+        align-items: center;     
+        height: 5rem;
+        width: 100%;
+        
+      }
+
+      /* .service h1{
+        margin: 10px 550px;
+        color: white;
+        font-size: 2rem;
+      }
+ */
+
+      .ser{
+        margin-top: 100px;
+        margin-left:550px;
+        color: white;
+        font-size: 2rem;
+      }
+      
+      .services {
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Prevent line breaks */
+            display: flex; /* Display children in a row */
+        }
+
+        
+        .services div {
+            flex: 0 0 auto; /* Allow items to shrink and don't grow */
+            margin-right: 20px; /* Add some spacing between items */
+        }
+
+        .l1{
+        width: 30%;
+        margin: 20px 30px;
+       
+      }
+
+
+        .l1 img {
+            max-width: 100%;             
+            height: 20rem;
+            margin: 10px 10px; 
+        }
+
+        .l1 p{
+            margin: 10px  30px;
+            color: white;
+        }
+        .l2{
+        width: 30%;
+        margin: 20px 30px;
+        
+      }
+
+
+    .l2 img {
+        max-width: 100%;  
+        height: 20rem;
+        margin: 10px 10px;
+    }
+
+    .l2 p{
+        margin: 10px  30px;
+        color: white;
+    }
+
+    .l3{
+        width: 30%;
+        margin: 20px 30px;
+        
+    }
+
+
+    .l3 img {
+        max-width: 100%; 
+        height: 20rem;
+        margin: 10px 10px; 
+    }
+
+    .l3 p{
+        margin: 10px  30px;
+        color: white;
+    }
+     
+      
+
+
+
+    .fifthSection{  
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+        height: 30rem;
+        width: 100%;
+      }
+
+      .con{
+        color: white;
+        height: 3rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+      .box {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: rgb(218, 217, 217);
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+   
+
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    input[type="text"], textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 95%;
+    }
+
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 50%;
+      margin: 20px 110px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+/* Style other sections as needed */
+
+/* Style the footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Laprental</div>
+            <ul>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+
+    <section class="firstSection">
+          
+        <div class="first">
+        <div class="left">
+          
+        </div>
+
+        <div class="right">
+              <h1>Welcome to Laprental</h1>
+              <div class="righttext">Laprental offers reliable laptop rentals with high value, quality, 
+                and affordability. They provide a wide selection of laptops from top manufacturers, 
+                flexible rental options, and committed customer service. Laprental ensures access to the 
+                appropriate gadget for your needs, ensuring hassle-free and dependable technology</div>
+              <div class="button">
+                <button class="btn">More Details
+                </button>
+            </div>      
+      </div>
+      </section>
+
+
+      <section class="secondSection">
+          
+        <div class="second">
+
+        <div class="lefttsec">
+              <h2 class="head">About Us</h2>
+              <div class="lefttext"> Greetings from Laprental, the best place to hire a laptop. Laprental is your reliable partner, dedicated <br>
+                to meeting all of your laptop rental needs with top-notch laptop solutions. We know how important <br>
+                technology is in today's hectic environment, and we want to make sure you get the resources you <br>
+                need when you need them. <br>
+                <br>
+
+                Laprental imagines a society in which everyone has access to technology. Our goal is to become <br>
+                your go-to resource for laptop rentals while improving events, business, and education.We enable <br>
+                people and businesses to succeed by offering durable laptops that promote advancement and <br>
+                creativity.
+                <br>
+                <br>
+                Select Laprental as your laptop rental partner to benefit from our affordable, flexible, <br>
+                and convenient services for both your personal and professional needs. Find a more <br>
+                clever method</div>
+          </div>
+
+          <div class="rightsec">
+            <img src="aboutlap.jpg" alt="">
+          </div>
+          
+      </div>
+  
+      </section>
+
+    <section class="service">
+        <h1 class="ser">Our Services</h1>
+    </section>
+
+    <section class="services">
+       
+        <div class="third"></div>
+        
+        <div class="l1">
+            <img src="a1.jpg" alt="">
+            <p>Gaming Laptop</p>
+        </div>
+            
+        <div class="l2">
+            <img src="a2.jpg" alt="">
+            <p>Office laptop</p>
+        </div>
+
+        <div class="l3">
+            <img src="a3.jpeg" alt="">
+            <p>Tablet</p>
+        </div>
+        
+    </section>
+
+    <section class="fifthSection">
+        <h1 class="con">Contact </h1>
+          <div class="box">
+            <form action="#" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+        
+              <label for="email">Email:</label>
+              <input type="text" id="email" name="email" required>
+        
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="4" required></textarea>
+        
+              <input type="submit" value="Submit">
+            </form>
+          </div>    
+    </section>
+
+    <footer>
+        &copy; 2023 Laprental
+    </footer>
+</body>
+</html>

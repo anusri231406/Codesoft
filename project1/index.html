@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+      body{
+        background-color: rgba(118, 9, 241, 0.781);
+        color: white;
+        font-family: 'Poppins',sans-serif;
+      } 
+      nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 60px;
+        background-color: rgb(83, 43, 226);
+      } 
+      nav ul{
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li{
+        list-style: none;
+        margin: 5px 20px;
+        font-size: 1 rem;
+      }
+      nav ul li a{
+        text-decoration: none;
+        color: white;
+      }
+       
+      nav ul li a:hover{
+        color: violet;
+        font-size: 1.2rem;
+      }
+      
+      .left{
+        font-size: 1.6rem;
+      }
+      .right{
+        margin: 0 -120px;
+      }
+
+      .firstSection
+      {
+        display: flex;
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+        
+      }
+
+
+      .leftSection
+      {
+        /* background-color: blue; */
+        width: 70%;                        
+        margin: 10px 50px;        
+      }
+      .leftsectiontext{
+        align-items: center;
+        font-size: 2rem;
+        margin: 50px 10px;
+      }
+
+      .btn
+      {
+        width: 11rem;
+        text-decoration: none;
+        line-height: 10px;
+        padding: 14px;
+        font-size: 500;
+        margin-top: 30%;
+        background-color: rgb(245, 109, 245);
+        color: blue;
+        display :inline-block
+      }
+      .btn a:hover{
+        color: white;
+        text-decoration: none;
+      }
+
+      .rightSection{
+        width: 60%;
+        color: blue;
+
+      }
+
+      .rightSection img
+      {
+        width: 300px;
+        margin: 50px 0;
+        
+        border-radius: 1rem;  
+      }
+
+      .purple
+      {
+        color: aqua;
+      }
+      #element{
+        color: aqua;
+      }
+
+      .secondSection{
+        
+        
+        margin: 80px 0;
+        align-items: center;
+        height: 35rem;
+        width: 100%;
+        
+      }
+      
+      .second{
+        margin: 80px 0;
+        display: flex;
+      }
+
+      .left{
+        width: 70%;
+      }
+
+      .left img
+      {
+        width: 400px;
+        margin: 50px 40px;
+        margin-top: 60px;
+        
+        border-radius: 1rem;  
+      }
+
+      .right{
+        width: 70%;                        
+        margin: 10px 50px;   
+      }
+
+      h1{
+        font-size: 2rem;
+        margin: 40px 10px;
+      }
+
+      .righttext{
+        align-items: center;
+        font-size: 1.3rem;
+        margin: 40px 10px;
+      }
+
+      .thirdSection{
+        
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+        height: 25rem;
+        width: 100%;
+        
+      
+      }
+
+      .thirdSection h1{
+        height: 3rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+      .third{
+        display: flex;
+        justify-content: space-around;
+      }
+      .leftsec{
+        height: 20rem;
+        width: 35%;
+        
+      }
+
+      .leftsec img{
+        width: 425px;
+        margin: 0 0;
+      }
+
+      .rightsec{
+        height: 20rem;
+        width: 35%;
+        
+      }
+
+      .rightsec img{
+        width: 425px;
+        margin: 0 0;
+      }
+
+      .thirdSection1{
+        
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+        height: 25rem;
+        width: 100%;
+        
+      
+      }
+      .rightsect img{
+        width: 425px;
+        height: 25rem;
+      }
+      .fourthSection{
+        
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+        height: 50rem;
+        width: 100%;
+        
+      }
+
+      .fourthSection h1{
+        height: 3rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+      
+      .skills-container {
+      
+      justify-content: space-between;
+      max-width: 600px;
+      background-color: rgb(163, 147, 221);
+     
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+      
+      text-align:center;
+      font-size: 1rem;
+      
+      
+      margin: 0 auto;
+      padding: 30px;
+     
+    
+    }
+
+    .skill-bars {
+      margin: 10px 50px;
+      width: 300px;
+    }
+
+    .skill-bar {
+      background-color: #b5e3f1;
+      height: 15px;
+      margin: 10px 0;
+      position: relative;
+      width: 25rem;
+    }
+
+    .skill-bar-inner {
+      width: 0;
+      height: 100%;
+      background-color: #007BFF;
+      transition: width 2s; /* Adjust the duration as needed */
+    }
+
+    @keyframes moveSkillBar {
+      0% {
+        width: 0;
+      }
+      100% {
+        width: 100%;
+      }
+    }
+
+    .skill-bar-moving {
+      animation: moveSkillBar 2s; /* Use the same duration as in .skill-bar-inner */
+    }
+
+    .column {
+      flex: 1;
+      padding: 10px;
+    }
+
+    h2 {
+      
+      color: black;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      color: black;
+      text-align: left;
+    }
+
+    p {
+      margin: 10px 50px;
+      width: 100%;
+    }
+      
+
+      .fifthSection{  
+        justify-content: space-around;
+        margin: 80px 0;
+        align-items: center;
+        height: 30rem;
+        width: 100%;
+      }
+
+      .fifthSection h1{
+        height: 3rem;
+        font-size: 2rem;
+        text-align: center;
+      }
+      .box {
+      max-width: 420px;
+      margin: 0 auto;
+      padding: 30px;
+      background-color: #d3ecf7;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+   
+
+    label, input, textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      color: black;
+    }
+
+    input[type="text"], textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 95%;
+    }
+
+    input[type="submit"] {
+      background-color: #007BFF;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 50%;
+      margin: 20px 110px;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+
+    .fa {
+    padding: 5px;
+    font-size: 30px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 50px;
+    border-radius: 30%;
+    }
+
+    .fa:hover {
+        opacity: 0.7;
+    }
+
+    .fa-facebook {
+      box-sizing: border-box;
+      background: blue;
+      color: white;
+    }
+
+    .fa-instagram {
+    box-sizing: border-box;
+    background: blue;
+    color: white;
+  }
+
+    .fa-linkedin {
+    box-sizing: border-box;
+    background: blue;
+    color: white;
+  }
+
+    </style>
+</head>
+<body> 
+    <header>
+        <nav>
+            <div class="left">Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/">About Me</a></li>
+                    <li><a href="/">Certificate</a></li>
+                    <li><a href="/">Skill</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                    
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <div class="leftsectiontext">Hi, My name is <span class="purple">Anusri </span>
+                <div>and I am a </div>
+                  <span id="element"></span>
+                  <div class="button">
+                    <button class="btn"><a href="Resume.pdf">Download Resume</a></button>
+                    <button class="btn">Visit Github</button>
+                  </div>
+                </div>
+            </div>
+            
+            <div class="rightSection">
+                <img src="new.jpg.jpeg" alt="">
+            </div>
+        </section>
+
+        <section class="secondSection">
+          
+          <div class="second">
+          <div class="left">
+            <img src="about.jpg" alt="">
+          </div>
+
+          <div class="right">
+                <h1>About Me</h1>
+                <div class="righttext"> I am Anusri Saha, a third-year Computer Science student at UEM. Kolkata, known as the "City of Joy," is my beloved hometown. Professionally, I'm highly goal-oriented and driven to excel through practice and dedication. While my life skills may seem unconventional, my working skills are impressive. I am a free-spirited individual who relishes every aspect of life, shunning monotony. I'm a keen listener, passionate about understanding people, and deeply love travel. My hobbies include portrait drawing and reading books.</div>
+            </div>
+            
+        </div>
+    
+        </section>
+
+        <section class="thirdSection">
+          <h1>Certificates</h1>
+          <div class="third">
+          <div class="leftsec">
+            <img src="c1.jpg" alt="">
+          </div>
+          <div class="rightsec">
+            <img src="c2.jpg" alt="">
+          </div>
+        </div> 
+        </section>
+
+        <section class="thirdSection1">
+          
+          <div class="third">
+          <div class="leftsec">
+            <img src="c3.jpg" alt="">
+          </div>
+          <div class="rightsect">
+            <img src="exposys.jpg" alt="">
+          </div>
+        </div> 
+        </section>
+
+        <section class="fourthSection">
+          <h1>Skill</h1>
+          <div class="skills-container">
+    
+            <div class="column">
+              <h2>Technical Skills</h2>
+              <ul>
+                <p>HTML</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 60%;"></div>
+                  </div></div>
+                
+                  <p>CSS</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 60%;"></div>
+                  </div></div>                               
+                
+                  <p>flutter</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 86%;"></div>
+                  </div></div>
+                
+                  <p>Java</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 60%;"></div>
+                  </div></div>
+                
+                  <p>Python</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 80%;"></div>
+                  </div></div>
+                
+                  <p>C</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 85%;"></div>
+                  </div></div>
+               
+              </ul>
+            </div>
+            <div class="column">
+              <h2>Professional Skills</h2>
+              <ul>
+                <p>Project Management</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 75%;"></div>
+                  </div></div>
+                
+                  <p>Communication</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 70%;"></div>
+                  </div></div>
+                
+                  <p>Teamwork</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 85%;"></div>
+                  </div></div>
+                
+                  <p>Problem Solving</p>
+                <div class="skill-bars">
+                  <div class="skill-bar">
+                    <div class="skill-bar-inner skill-bar-moving" style="width: 60%;"></div>
+                  </div></div>
+                
+              </ul>
+            </div>
+          </div>
+          
+        </section>
+
+        <section class="fifthSection">
+          <h1>Contact Me</h1>
+            <div class="box">
+              <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+          
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+          
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+          
+                <input type="submit" value="Submit">
+              </form>
+            </div>
+          
+        </section>
+        <a href="#" class="fa fa-facebook"><a href=""></a></a>
+        <a href="#" class="fa fa-linkedin"><a href=""></a></a>
+        <a href="#" class="fa fa-instagram"><a href="aviva_armaanian"></a></a>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['Web Developer', 'Web designer','App Developer'],
+        typeSpeed: 50,
+      });
+    </script>
+
+</body>
+</html>
